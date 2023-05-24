@@ -672,3 +672,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   breakableCube: {fileID: 596413151136449647, guid: ee0a9e4bf2048a642bb29f821fa17c6b, type: 3}
+  cellLength: 6

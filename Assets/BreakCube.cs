@@ -8,7 +8,6 @@ public class BreakCube : MonoBehaviour
     private int cellLength;
     void Start()
     {
-        cellLength = 10;
     }
 
     // Update is called once per frame
@@ -23,6 +22,10 @@ public class BreakCube : MonoBehaviour
         {
             Divide();
         }
+    }
+
+    public void initialize(int cellLength) {
+        this.cellLength = cellLength;
     }
 
     private void Divide()

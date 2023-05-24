@@ -5,6 +5,8 @@ using UnityEngine;
 public class BreakableCubeSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject breakableCube;
+    [SerializeField]
+    private int cellLength = 6;
 
     // Start is called before the first frame update
     void Start() {
@@ -14,6 +16,7 @@ public class BreakableCubeSpawner : MonoBehaviour {
     private IEnumerator SpawnCube() {
         while (true) {
             GameObject prefab = Instantiate(breakableCube, transform);
+            prefab.GetComponent<BreakCube>().initialize(cellLength);
             prefab.transform.Rotate(new Vector3(
                 Random.Range(0, 90),
                 Random.Range(0, 90),
