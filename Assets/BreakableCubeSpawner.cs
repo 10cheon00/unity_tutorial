@@ -6,7 +6,7 @@ public class BreakableCubeSpawner : MonoBehaviour {
     [SerializeField]
     private GameObject breakableCube;
     [SerializeField]
-    private int cellLength = 6;
+    private int cellLength = 3;
 
     // Start is called before the first frame update
     void Start() {
